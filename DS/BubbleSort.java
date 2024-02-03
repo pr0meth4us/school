@@ -9,11 +9,6 @@ class BubbleSort {
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
-        if (n%10000==0){
-            System.out.println(n);
-        }
-
-
     }
 
     // Prints the array
