@@ -4,6 +4,11 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/DS" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/AI/.venv/Lab1(2)" />
+      <excludeFolder url="file://$MODULE_DIR$/AI/.venv/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/AI/.venv/include" />
+      <excludeFolder url="file://$MODULE_DIR$/AI/.venv/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/AI/.venv/share" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
