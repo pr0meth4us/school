@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class BubbleSort {
     static void bubbleSort(int[] arr)
     {
@@ -38,6 +36,4 @@ class BubbleSort {
         ob.printArray(numlist);
         System.out.println(executionTime);
     }
-
-
 }
