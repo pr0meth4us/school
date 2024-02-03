@@ -1,6 +1,6 @@
 // Java program for implementation of Cocktail Sort
 public class CocktailSort {
-    void cocktailSort(int[] a)
+    static void cocktailSort(int[] a)
     {
         boolean swapped = true;
         int start = 0;
@@ -63,12 +63,17 @@ public class CocktailSort {
     }
 
     // Driver method
-    public static void main(String[] args)
-    {
+    public static void main(String[] args){
         CocktailSort ob = new CocktailSort();
-        int[] a = { 5, 1, 4, 2, 8, 0, 2 };
-        ob.cocktailSort(a);
-        System.out.println("Sorted array");
-        ob.printArray(a);
+        int[] numlist = new int[100000];
+        for (int i =0; i<100000; i++){
+            numlist[i] =  (int) (Math.random() * 100000000);
+        }
+        long startTime = System.nanoTime();
+        cocktailSort(numlist);
+        long endTime = System.nanoTime();
+        long executionTime = (endTime - startTime) / 1000000;
+        ob.printArray(numlist);
+        System.out.println(executionTime);
     }
 }

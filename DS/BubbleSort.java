@@ -27,8 +27,8 @@ class BubbleSort {
     }
     public static void main(String[] args){
         BubbleSort ob = new BubbleSort();
-        int[] numlist = new int[1000000];
-        for (int i =0; i<1000000; i++){
+        int[] numlist = new int[100000];
+        for (int i =0; i<100000; i++){
             numlist[i] =  (int) (Math.random() * 100000000);
         }
         long startTime = System.nanoTime();
