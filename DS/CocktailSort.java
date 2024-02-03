@@ -1,4 +1,3 @@
-// Java program for implementation of Cocktail Sort
 public class CocktailSort {
     static void cocktailSort(int[] a)
     {
