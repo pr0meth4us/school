@@ -1,60 +1,53 @@
 public class CocktailSort {
-    static void cocktailSort(int[] a)
-    {
-        boolean swapped = true;
+    void cocktailSort(int a[]) {
         int start = 0;
         int end = a.length;
+        int passCount = 1;
 
-        while (swapped) {
-// reset the swapped flag on entering the
-// loop, because it might be true from a
-// previous iteration.
-            swapped = false;
+        while (true) {
+            boolean swapped = false;
+            int swapCountForward = 0;
+            int swapCountBackward = 0;
 
-// loop from bottom to top same as
-// the bubble sort
+            // Forward pass
             for (int i = start; i < end - 1; ++i) {
                 if (a[i] > a[i + 1]) {
                     int temp = a[i];
                     a[i] = a[i + 1];
                     a[i + 1] = temp;
                     swapped = true;
+                    swapCountForward++;
+                    System.out.println("Forward Pass " + passCount + ", Swap " + swapCountForward + ":");
+                    printArray(a);
                 }
             }
 
-// if nothing moved, then array is sorted.
-            if (!swapped)
-                break;
+            if (!swapped) break;
 
-// otherwise, reset the swapped flag so that it
-// can be used in the next stage
             swapped = false;
+            end--;
 
-// move the end point back by one, because
-// item at the end is in its rightful spot
-            end = end - 1;
 
-// from top to bottom, doing the
-// same comparison as in the previous stage
+            // Backward pass
             for (int i = end - 1; i >= start; i--) {
                 if (a[i] > a[i + 1]) {
                     int temp = a[i];
                     a[i] = a[i + 1];
                     a[i + 1] = temp;
                     swapped = true;
+                    swapCountBackward++;
+                    System.out.println("Backward Pass " + passCount + ", Swap " + swapCountBackward + ":");
+                    printArray(a);
                 }
             }
 
-// increase the starting point, because
-// the last stage would have moved the next
-// smallest number to its rightful spot.
-            start = start + 1;
+            start++;
+            passCount++;
         }
     }
 
     /* Prints the array */
-    void printArray(int[] a)
-    {
+    void printArray(int a[]) {
         int n = a.length;
         for (int i = 0; i < n; i++)
             System.out.print(a[i] + " ");
@@ -62,17 +55,11 @@ public class CocktailSort {
     }
 
     // Driver method
-    public static void main(String[] args){
+    public static void main(String[] args) {
         CocktailSort ob = new CocktailSort();
-        int[] numlist = new int[100000];
-        for (int i =0; i<100000; i++){
-            numlist[i] =  (int) (Math.random() * 100000000);
-        }
-        long startTime = System.nanoTime();
-        cocktailSort(numlist);
-        long endTime = System.nanoTime();
-        long executionTime = (endTime - startTime) / 1000000;
-        ob.printArray(numlist);
-        System.out.println(executionTime);
+        int a[] = {5, 1, 4, 2, 8, 0, 2};
+        ob.cocktailSort(a);
+        System.out.println("Sorted array:");
+        ob.printArray(a);
     }
 }
