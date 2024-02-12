@@ -1,0 +1,126 @@
+.cgds.combobox .container {
+  border: 1px solid #98A2B3;
+  appearance: none;
+  border-radius: 0.4rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  line-height: 2.875em;
+}
+.cgds.combobox .container:focus {
+  border-color: black;
+  outline: 0;
+  box-shadow: 0 0 0 0.125rem rgba(0, 0, 255, 0.25);
+}
+.cgds.combobox .container i.bi {
+  position: absolute;
+  z-index: 4;
+  right: 1em;
+  color: green;
+}
+.cgds.combobox .container span.placeholder {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  color: #999;
+  border-top: 0;
+}
+.cgds.combobox div.container > span.placeholder:focus + div.menu label.option > a.title {
+  display: none;
+}
+.cgds.combobox div.container > span.placeholder {
+  display: contents;
+  background: gray;
+  padding: 0 0.4375rem 0 1rem;
+  cursor: pointer;
+  height: 3em;
+  font-weight: normal;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  opacity: 0;
+}
+.cgds.combobox div.container > span.placeholder:focus .bi-chevron-down, .cgds.combobox div.container > span.placeholder:active .bi-chevron-down {
+  display: none;
+}
+.cgds.combobox div.container > span.placeholder:focus .bi-chevron-up, .cgds.combobox div.container > span.placeholder:active .bi-chevron-up {
+  display: block;
+}
+.cgds.combobox div.container > span.placeholder:focus .bi-chevron-up:focus + div.menu label.option > a.title, .cgds.combobox div.container > span.placeholder:active .bi-chevron-up:focus + div.menu label.option > a.title {
+  display: none;
+}
+.cgds.combobox div.container > span.placeholder:focus + div.menu label.option a, .cgds.combobox div.container > span.placeholder:active + div.menu label.option a {
+  position: relative !important;
+}
+.cgds.combobox div.container > span.placeholder:focus + div.menu label.option:first-of-type > a.title, .cgds.combobox div.container > span.placeholder:active + div.menu label.option:first-of-type > a.title {
+  border-top: 1px solid gainsboro;
+}
+.cgds.combobox div.container > span.placeholder:not(:focus) {
+  z-index: 4;
+}
+.cgds.combobox div.container > span.placeholder:not(:focus) + div.menu label.option > a.title {
+  display: none;
+}
+.cgds.combobox div.container > span.placeholder:not(:focus) + div.menu label.option ~ .dropdown-divider {
+  display: none;
+}
+.cgds.combobox div.container > span.placeholder:not(:focus) .bi-chevron-up {
+  display: none;
+}
+.cgds.combobox div.container > span.placeholder:not(:focus) .bi-chevron-down {
+  display: block;
+}
+.cgds.combobox div.container > span.placeholder:not(:focus) .bi-chevron-down:focus + div.menu label.option > a.title {
+  display: block;
+  position: relative !important;
+}
+.cgds.combobox div.container > span.placeholder:disabled {
+  cursor: no-drop;
+}
+.cgds.combobox div.menu label.option {
+  display: block;
+  overflow: hidden;
+  z-index: 0;
+  width: 100%;
+  transition: all 1s ease-out;
+}
+.cgds.combobox div.menu label.option a.title {
+  position: relative;
+  z-index: 2;
+  transition: background 0.3s ease-out;
+}
+.cgds.combobox div.menu label.option a.title:hover {
+  color: peru;
+  border-left: 0.125em solid purple;
+  background-color: peachpuff;
+  padding: 0 0.4375rem 0 1rem;
+}
+.cgds.combobox div.menu label.option input {
+  display: none;
+}
+.cgds.combobox div.menu label.option input + a.title:active {
+  background: aquamarine;
+  color: white;
+}
+.cgds.combobox div.menu label.option input:checked + a.title {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  top: 0;
+  box-shadow: none;
+  color: inherit;
+  width: 100%;
+}
+.cgds.combobox div.menu label.option input:disabled ~ a.title {
+  background: maroon !important;
+  color: magenta;
+}
+.cgds.combobox div.menu label.option input:disabled ~ a.title:hover {
+  color: midnightblue;
+  background: none;
+  cursor: no-drop;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
