@@ -8,7 +8,6 @@ public class CocktailSort {
             boolean swapped = false;
             int swapCountForward = 0;
             int swapCountBackward = 0;
-
             // Forward pass
             for (int i = start; i < end - 1; ++i) {
                 if (a[i] > a[i + 1]) {

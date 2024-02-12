@@ -2,5 +2,20 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/assignment-3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/assignment-3-pr0meth4us" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/assignment-4-pr0meth4us" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/assignment-6-pr0meth4us" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/classes-and-objects-challenges-pr0meth4us" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/classroom-assignment-file-handling-mechanism-pr0meth4us" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/encapsulation-challenge-pr0meth4us" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/encapsulation-challenge-pr0meth4us 13.56.06" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/encapsulation-challenge-pr0meth4us 13.57.27" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/exam" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/new-constructorchallenge-pr0meth4us" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/queue-assignment-10-pr0meth4us" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/springboot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/starnight-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JAVA2/test" vcs="Git" />
   </component>
 </project>
