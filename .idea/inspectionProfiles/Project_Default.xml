@@ -1,4 +1,20 @@
-<component name="InspectionProjectProfileManager">
+nisoeung@Macintosh-2 AI % source .venv/bin/activate
+(.venv) nisoeung@Macintosh-2 AI % pip install numpy pandas scikit-learn matplotlib
+zsh: command not found: pip
+(.venv) nisoeung@Macintosh-2 AI % pip install graphviz
+zsh: command not found: pip
+(.venv) nisoeung@Macintosh-2 AI % pip
+zsh: command not found: pip
+(.venv) nisoeung@Macintosh-2 AI % /usr/bin/python3 pip install graphviz
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/nisoeung/Documents/code/AUPP/school/AI/pip': [Errno 2] No such file or directory
+(.venv) nisoeung@Macintosh-2 AI % python3 -m pip install graphviz
+Defaulting to user installation because normal site-packages is not writeable
+Collecting graphviz
+  Downloading graphviz-0.20.1-py3-none-any.whl (47 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.0/47.0 kB 731.4 kB/s eta 0:00:00
+Installing collected packages: graphviz
+Successfully installed graphviz-0.20.1
+(.venv) nisoeung@Macintosh-2 AI % <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
     <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
