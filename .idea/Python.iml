@@ -11,7 +11,7 @@
       <excludeFolder url="file://$MODULE_DIR$/AI/.venv/share" />
       <excludeFolder url="file://$MODULE_DIR$/AI/env" />
     </content>
-    <orderEntry type="jdk" jdkName="openjdk-21" jdkType="JavaSDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (school)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
